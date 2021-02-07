@@ -20,10 +20,14 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 65px 0 0 0;
-    position: absolute;
+    margin: 0;
+    padding: 0;
+    position: fixed;
 }
 
+.header-content button{
+    float: center;
+}
 nav{
     text-transform: uppercase;
     color: #fff;
