@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сюда подключаем стили -->
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- Здесь будет структура документа -->
+
     <header class="header">
         <div class="header__top">
             <nav class="header__menu menu">
@@ -162,10 +164,13 @@
     <section class="about">   
 
         <div class="about__content-left">
+
             <img class="about__img" src="" alt="" >
+
         </div>
 
         <div class="about__content-right">
+
             <h2 class="about__title title">What makes Smoothie an <span class="about__title-span">awesome drink?</span></h2>
             
             <ul class="about__list">
@@ -179,7 +184,7 @@
                 <li class="about__list-item">Corn-Free & Soy-Free</li>
             </ul>
 
-            <button class="about__btn btn btn--green">About Organic Smoothie</button>
+            <button class="about__btn btn btn--orange">About Organic Smoothie</button>
 
         </div>
 
@@ -248,6 +253,7 @@
         <div class="testimonials__contener">
 
             <div class="testimonials__block">
+
                 <q class="testimonials__text text">
                     Smoothie is great. I don't know what else to say. 
                     I will let my mum know about this, she could really make use of Smoothie!
@@ -268,6 +274,7 @@
     </section>
 
     <section class="blog">
+        
         <div class="blog__contener">
 
             <h2 class="blog__titel title">Our blog</h2>
@@ -346,8 +353,8 @@
                 </a>
             </div>
 
-            <div class="information">
-                <h4 class="information__title">Information</h4>
+            <div class="footer__information information">
+                <h4 class="footer__title">Information</h4>
 
                 <ul class="information__list">
                     <li class="information__list-item">Search</li>
@@ -357,9 +364,9 @@
                 </ul>
             </div>
 
-            <div class="payment">
+            <div class="footer__payment payment">
 
-                <h4 class="payment__title">Payment</h4>
+                <h4 class="footer__title">Payment</h4>
 
                 <div class="payment__items">
 
@@ -409,30 +416,29 @@
                                
             </div>
 
-            <div class="inportant" >
+            <div class="footer__subscibe" >
 
-                <h4 class="inportant__title">Don't miss out!</h4>
+                <h4 class="footer__title">Don't miss out!</h4>
 
-                <form class="inportant__form" action="">
-                    <input class="inportant__input" type="text" placeholder="Subscribe to our newsletter">
+                <form class="footer__form" action="">
+                    <input class="footer__input" type="text" placeholder="Subscribe to our newsletter">
+                    <button class="footer__block-link" type="submit">Follow us</button>
                 </form>
                 
-                <div class="important__bootom">
+                <div class="footer__socials">
 
-                    <a class="imortant__bootom-link">Follow us</a>
+                    <ul class="footer__socials-list">
 
-                    <ul class="imortant__bootom-list">
-
-                        <li class="imortant__bootom-item">
-                            <a class="imortant__bootom-link" href=""><img class="imortant__bootom-img" src="" alt=""></a>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href=""><img class="footer__socials-img" src="" alt=""></a>
                         </li>
 
-                        <li class="imortant__bootom-item">
-                            <a class="imortant__bootom-link" href=""><img class="imortant__bootom-img" src="" alt=""></a>
+                        <li class="footer__socials-item">
+                            <a class="footer__block-bootom-link" href=""><img class="footer__block-bootom-img" src="" alt=""></a>
                         </li>
 
-                        <li class="imortant__bootom-item">
-                            <a class="imortant__bootom-link" href=""><img class="imortant__bootom-img" src="" alt=""></a>
+                        <li class="footer__block-bootom-item">
+                            <a class="footer__block-bootom-link" href=""><img class="footer__block-bootom-img" src="" alt=""></a>
                         </li>
 
                     </ul>
@@ -445,11 +451,11 @@
 
         <div class="footer__bottom">
 
-            <p class="footer__bottom-text">© 2020. All Rights Reserved.</p>
+            <span class="footer__bottom-text">© 2020. All Rights Reserved.</span>
 
-            <div class="footer__bottom-item">
+            <div class="footer__btn-top-wrap">
 
-                <span class="footer__bottom-span">Go top</span>
+                <span class="footer__span">Go top</span>
 
                 <a class="footer__bottom-link" href="">
                     <img class="footer__bottom-img" src="" alt="">
