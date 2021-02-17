@@ -21,6 +21,7 @@ html {
  */
 
 body {
+  
   margin: 0;
 }
 
@@ -346,4 +347,12 @@ template {
 
 [hidden] {
   display: none;
+}
+ul li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
 }

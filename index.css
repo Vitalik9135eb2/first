@@ -1,0 +1,248 @@
+@font-face{
+    font-family:"MuliRegular";
+    src: url("assets/fonts/Muli-Regular.woff") format("truetype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"MuliBold";
+    src: url("assets/fonts/Muli-Bold.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"MuliExtraBold";
+    src: url("assets/fonts/Muli-ExtraBold.woff") format("truetype");
+    font-style: normal;
+}
+
+
+
+
+/*-----------------------------------HEADER------------------------------------------------------*/
+
+.header{
+    height: 100vh;
+    background: url("assets/images/header/header-bg-img.png")  no-repeat ;
+    background-size: cover;
+         
+}
+
+.header__top{
+   padding: 75px 100px 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -----------------header__menu-------------*/
+
+.menu__list{
+    border: 2px solid red;
+    display: flex;
+    padding: 0;
+    margin: 0;    
+}
+
+.menu__item{
+    margin-right: 35px;
+    
+}
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.menu__link{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "MuliBold", sans-serif;
+    font-size: 16px;
+}
+
+/*--------logo-------*/
+.header__logo{
+    border: 2px solid red;
+
+}
+
+/*---------------header__block-right----------------*/
+
+.header__block-right{
+    width: 420px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* personal*/
+
+.personal__list{
+    border: 2px solid red;
+    display: flex;
+    padding: 0 ;
+    margin: 0;
+}
+.personal__list-item{
+    margin-right: 45px;
+}
+.personal__list-item:last-child{
+    margin-right: 0;
+}
+
+.personal__cart-count{
+    display: inline-block;
+    background-color: #fff;
+    border-radius:50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 2;
+    color: #000;
+}
+
+
+/*social*/
+
+.social__list{
+    border: 2px solid red;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.social__list-item{
+    margin-right: 45px;
+    
+}
+
+.social__list-item:last-child{
+    margin-right: 0;
+}
+
+.social__link{
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 2.4;
+    
+}
+
+.header__content{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+.header__btn{
+    width: 280px;
+    height: 70px;
+    
+  
+}
+.btn{
+    font-size: 24px;
+    font-family: "MuliExtraBold", sans-serif;
+    border-radius: 35px; 
+    outline: none; 
+    padding: 0 38px;
+}
+
+.btn--green{
+    background-color: #0aa566;
+
+}
+
+
+/*----------------------smoothies----------------------*/
+
+.smoothies{
+    height: 100vh;
+    
+    border: 2px solid red;
+}
+.smoothies__title{
+    margin: 100px 0 55px 0 ;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.smoothies__text{
+    border: 2px solid red;
+    display: block;
+    text-align: center;
+    width: 915px;
+    margin: 0 auto;
+} 
+
+.text{
+    font-family: "MuliRegular", sans-serif;
+    font-size: 18px;
+    line-height: 1.95;
+
+}
+
+.smoothies__contener{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    
+}
+
+.smoothies__item{
+    border: 2px solid red;
+  
+}
+
+
+
+/*-----------about----------*/
+
+.about{
+    height: 100vh;
+    background-color: #14826f;
+    display: flex;
+}
+
+.about__img{
+    width: 691px;
+  height: 818px
+}
+
+
+
+
+
+
+
+
+
+
+/*---------products-----------*/
+
+.products{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.products__item{
+    
+}
+
+.products__span{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
