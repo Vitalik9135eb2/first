@@ -63,6 +63,7 @@
 /*--------logo-------*/
 .header__logo{
     border: 2px solid red;
+    
 
 }
 
@@ -160,9 +161,12 @@
 /*----------------------smoothies----------------------*/
 
 .smoothies{
-    height: 100vh;
+    height: 860px;
     
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items:center
 }
 .smoothies__title{
     margin: 100px 0 55px 0 ;
@@ -186,16 +190,37 @@
 }
 
 .smoothies__contener{
-    border: 2px solid red;
+    width: 1010px;
+    
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .smoothies__item{
-    border: 2px solid red;
-  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 251px;
+    border-right: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
+}
+.smoothies__item:nth-child(8 )  {border: 0;}.smoothies__item:nth-child(7)  {border-bottom: 0;} .smoothies__item:nth-child(6)  {border-bottom: 0;}
+.smoothies__item:nth-child(5)  {border-bottom: 0;} .smoothies__item:nth-child(4)  {border-right: 0;}
+
+.smoothies__img{
+    width: 74px;
+    height: 70px;
+    margin: 35px 0 0 0;
+}
+
+.smoothies__item-name{
+    
+    margin: 23px 0px 18px 0px;
+    padding: 0;
 }
 
 
@@ -203,16 +228,50 @@
 /*-----------about----------*/
 
 .about{
-    height: 100vh;
+    height: 800px;
     background-color: #14826f;
     display: flex;
 }
 
+.about__content-left{
+    border: 2px solid red;
+    margin:64px 142px 0 143px; ;
+}   
+
 .about__img{
     width: 691px;
-  height: 818px
+    height: 818px;
+    z-index: 1222;
+    position: relative;
 }
 
+.about__content-right{
+    border: 2px solid red;
+    margin: 64px 0 0 0;
+}
+
+.about__title{
+    border: 2px solid red;
+    font-size: 55px;
+    font-weight: 800;
+    width: 588px;
+}
+.about__title-span{
+    color: #cae941
+}
+
+.about__list{
+    margin: 68px 0 0 0;
+}
+
+.about__list-item{
+
+}
+
+.btn--orange{
+    width: 380px;
+    height: 60px;
+}
 
 
 
@@ -225,19 +284,105 @@
 /*---------products-----------*/
 
 .products{
-    height: 100vh;
+    height: 800px;
     display: flex;
     justify-content: space-between;
 }
 .products__item{
-    
+    border: 2px solid red;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
+.products__img{
+  width: 119px;
+  height: 303px;
+  margin: 0 auto;
+}
+.products__item:first-child{
+    background-color: #632b17;
+}
+
+.products__item:nth-child(2){
+    background-color: #178670
+}
+.products__item:nth-child(3){
+    background-color: #f7ae3b;
+}
+
+.products__item:nth-child(4){
+    background-color: #c3471b;
+}
+.products__titel{
+
+}
 .products__span{
     display: block;
 }
 
+.products__btn{
 
+}
+
+
+/*-----------------story--------------------*/
+
+.story{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.story__contener{
+    border: 2px solid red;
+    display: flex;
+    width: 1302px;
+    height: 605px;
+    
+}
+
+/*-content-left--*/
+
+.story__content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.story__title{
+
+}
+
+.story__text{
+display: block;
+width: 510px;
+}
+
+.story__button{
+    width: 301px;
+  height: 60px;
+}
+
+/*---content-righr---*/
+
+.story__img{
+  width: 585px;
+  height: 601px;
+}
+
+
+/**********testimonials***********/
+
+.testimonials{
+    height: 800px;
+    background: url("assets/images/testimonials/Sarah\ A.png") center no-repeat;
+    background-size: 100%;
+
+}
 
 
 
