@@ -67,20 +67,22 @@
     border: 2px solid red;
     display: flex; 
     justify-content: center;
-
+    
 }
 
 /*---------------header__block-right----------------*/
 
 .header__block-right{
-    width: 420px;
-    
+  
     display: flex;
     justify-content: space-between;
 }
 
 
 /* personal*/
+.header__personal{
+    margin: 0 124px 0 0;
+}
 
 .personal__list{
     border: 2px solid red;
@@ -189,7 +191,7 @@
     border: 2px solid red;
     display: block;
     text-align: center;
-    width: 915px;
+    max-width: 915px;
     margin: 0 auto;
 } 
 
@@ -201,7 +203,7 @@
 }
 
 .smoothies__contener{
-    width: 1010px;
+    max-width: 1010px;
     
     display: flex;
     justify-content: space-between;
@@ -215,7 +217,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
-    width: 251px;
+    width: 25%;
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
 }
@@ -256,8 +258,8 @@
 }   
 
 .about__img{
-    width: 691px;
-    height: 818px;
+    max-width: 691px;
+    max-height: 818px;
     z-index: 1222;
     position: relative;
 }
@@ -297,13 +299,21 @@
     color: #fff;
     padding: 0 0 20px 0;
 }
+.about__list-item:last-child{
+    padding: 0;
+}
+.about__btn{
+    color: #fff;
+    max-width: 380px;
+    max-height: 60px;
+    margin: 0 0 90px 0;
+}
 
 .btn--orange{
-    width: 380px;
-    height: 60px;
+
     border: 1px solid #f7ae3b;
     background-color: #14826f;
-    color: #fff;
+    
 }
 
 
@@ -311,10 +321,7 @@
 
 
 
-
-
-
-/*---------products-----------*/
+/*------------------------products--------------------*/
 
 .products{
     height: 800px;
@@ -370,7 +377,7 @@
 
 .products__btn{
     margin: 65px 0 0 0;
-    width: 204px;
+    max-width: 204px;
     height: 60px;
     border: 2px solid #fff;
     
@@ -400,7 +407,7 @@
 .story__contener{
     border: 2px solid red;
     display: flex;
-    width: 1302px;
+    max-width: 1302px;
     height: 605px;
     
 }
@@ -423,12 +430,12 @@
 .story__text{
     margin: 45px 0 0 0;
     display: block;
-    width: 510px;
+    max-width: 510px;
 }
 
 .story__button{
     margin: 60px 0 0 0;
-    width: 301px;
+    max-width: 301px;
     height: 60px;
 }
 
@@ -438,6 +445,7 @@
     display: flex;
     
 }
+
 .story__img{
   width: 585px;
   height: 601px;
@@ -448,8 +456,8 @@
 
 .testimonials{
     height: 800px;
-    background: url("assets/images/testimonials/Sarah\ A.png") center no-repeat;
-    background-size: 764px;
+    background: url("assets/images/testimonials/Sarah\ A.png") 440px 250px no-repeat ;
+    background-size: 764px 148px;
     background-color: #672f1b;
     display: flex;
     flex-direction: column;
@@ -461,15 +469,17 @@
     display: block;
     border: 1px  solid red;
     margin: 110px 0 0 0;
+    color: #f7ae3b;
 }
 .testimonials__title-span{
-
+    color: #f2612d;
+    text-transform: uppercase;
 }
 
 .testimonials__contener{
-    width: 735px;
+    max-width: 735px;
     border: 2px solid red;
-    margin: 240px 0 0 0 ;
+    margin: 140px 0 0 0 ;
     display: flex;
         
 }
@@ -523,6 +533,8 @@
 
 .blog__titel{
     padding: 100px 0 0 0;
+    color: #f7ae3b;
+    margin: 0;
 
 }
 
@@ -536,39 +548,36 @@
     padding: 50px 0 0 0;
 }
 
-.blog__content-right{
-    
-}
-
 /***content--right***/
 .blog__content-right{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     
 }
 
 .blog__content-right-title{
-
+    font-size: 30px;
+    color: #f2612d;
+    margin:0;
 }
 
 .blog__content-right-time{
-
+margin: 20px 0 0 0;
 }
 .blog__content-right-text{
     border: 2px solid red;
     display: block;
     width: 472px;
-    padding: 0 0 0 120px;
-    
+    margin: 45px 0 215px 60px;    
 }
 
 /**************instagram*************/
 
 .instagram{
-    height: 415px;
+    height: 485px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -578,6 +587,10 @@
 .instagram__link-top{
     border: 2px solid red;
     display: block;
+    font-size: 24px;
+    font-weight: 800;
+    color: #0aa566;
+    margin: 0 0 45px 0;
 }
 
 .instagram__items{
@@ -589,6 +602,7 @@
 
 .instagram__item{
     display: flex;
+    flex: 0 0 20%;
 }
 .instagram__item-img{
     width: 100%;
@@ -621,6 +635,7 @@
     font-weight: 800;
     line-height: 1.54;
     letter-spacing: -0.52px;
+    margin: 80px 0 30px 0;
 }
 
 /****information****/
@@ -631,11 +646,15 @@
 }
 
 .information__list{
-
+    color: #6d450c;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Muli';
 }
 
 .information__list-item{
-
+padding: 20px 0 0 0;
 }
 
 
@@ -643,29 +662,69 @@
 /*****payment***/
 .footer__payment{
 border: 2px solid red;
-width: 250px;
+width: 270px;
 display: flex;
 flex-direction: column;
 }   
 
 .payment__items{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    align-items:center;
 }
 
 
-.payment__img{
-   
+.payment__link{
+   padding: 20px 21px 0 0;
 }
 
 /****subscribe****/
 .footer__subscribe{
 border: 2px solid red;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 495px;
+}
+.footer__input{
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    outline: none;
+    background-image: url("./assets/images/footer/input.png") ;
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+}
+.footer__input::placeholder{
+    padding: 0 0 0 60px;
+    color: #6d450c;
+    font-family: "Muli";
+    font-size: 17px;
 }
 
+.footer__block-link{
+    outline: none;
+    border: 0;
+    background: transparent;
+    color:#6d450c;
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transform: translate(150px, 20px);
 
-
+}
+.footer__socials{
+    margin: 0 50px 0 0;
+}
+.footer__socials-list{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__socials-item{
+    margin: 0 0 0 28px;
+}
 
 
 /*****footer__bottom****/
@@ -673,14 +732,25 @@ border: 2px solid red;
     background-color: #6c2c1c;
     height: 60px;
     display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .footer__bottom-text{
-    font-family: Muli;
+    font-family: "Muli";
     font-size: 13px;
     color: #af8a82;
 }
 
 .footer__btn-top-wrap{
     border: 2px solid red;
+    display: flex;
+    align-items:center;
+}
+.footer__span{
+    font-size: 18px;
+    color: #fff;
+}
+.footer__bottom-img{
+    transform: translate(10px, -25px);
 }
