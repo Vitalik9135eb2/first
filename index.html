@@ -16,35 +16,88 @@
     <header class="header">
         <div class="header__top">
 
-            <nav class="header__menu menu">
+            <button class="header__burger-btn">
+                <img src="assets/images/menu.svg" alt="" class="header__burger-btn-icon">
+            </button>
 
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" herf="#" >Shop</a>
-                    </li>
+            <div class="header__nav">
 
-                    <li class="menu__item">
-                        <a class="menu__link" herf="">Home</a>
-                    </li>
+                <nav class="header__menu menu">
 
-                    <li class="menu__item">
-                        <a class="menu__link" herf="">Story</a>
-                    </li>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" herf="#" >Shop</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" herf="">Home</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" herf="">Story</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" herf="">About</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" herf="">Blog</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" herf="" >Testimonials</a>
+                        </li>
+                    </ul>
+    
+                </nav>
+                
 
-                    <li class="menu__item">
-                        <a class="menu__link" herf="">About</a>
-                    </li>
+                <div class="header__block-right">
 
-                    <li class="menu__item">
-                        <a class="menu__link" herf="">Blog</a>
-                    </li>
+                    <div class="header__personal personal">
+                        <ul class="personal__list">
+                            <li class="personal__list-item">
+                                <a class="personal__link" href="">
+                                    <img class="personal__icon" src="assets/images/header/personal 1.png" alt="">
+                                </a>
+                            </li>
+        
+                            <li class="personal__list-item">
+                                <a class="personal__link" href="">
+                                    <img class="personal__icon" src="assets/images/header/personal 2.png" alt="">
+                                </a>
+                            </li>
+        
+                            <li class="personal__list-item">
+                                <a class="personal__link" href="">
+                                    <img class="personal__icon" src="assets/images/header/personal 3.png" alt="">
+                                </a>
+                                <span class="personal__cart-count">3</span>
+                            </li>
+                        </ul>
+        
+                    </div>
+        
+                    <div class="header__social social">
+                        <ul class="social__list">
+                            <li class="social__list-item">
+                                <a class="social__link" href=""><img class="social__icon" src="assets/images/header/social 1.png" alt=""></a>
+                            </li>
+                            <li class="social__list-item">
+                                <a class="social__link" href=""><img class="social__icon" src="assets/images/header/social 2.png" alt=""></a>
+                            </li>
+                            <li class="social__list-item">
+                                <a class="social__link"  href=""><img class="social__icon" src="assets/images/header/social 3 .png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
 
-                    <li class="menu__item">
-                        <a class="menu__link" herf="" >Testimonials</a>
-                    </li>
-                </ul>
+            </div>
 
-            </nav>
+            
 
             <div class="header__logo logo">
                 <a href="#" class="logo__link">
@@ -53,47 +106,7 @@
                 
             </div>
 
-            <div class="header__block-right">
-
-                <div class="header__personal personal">
-                    <ul class="personal__list">
-                        <li class="personal__list-item">
-                            <a class="personal__link" href="">
-                                <img class="personal__icon" src="assets/images/header/personal 1.png" alt="">
-                            </a>
-                        </li>
-    
-                        <li class="personal__list-item">
-                            <a class="personal__link" href="">
-                                <img class="personal__icon" src="assets/images/header/personal 2.png" alt="">
-                            </a>
-                        </li>
-    
-                        <li class="personal__list-item">
-                            <a class="personal__link" href="">
-                                <img class="personal__icon" src="assets/images/header/personal 3.png" alt="">
-                            </a>
-                            <span class="personal__cart-count">3</span>
-                        </li>
-                    </ul>
-    
-                </div>
-    
-                <div class="header__social social">
-                    <ul class="social__list">
-                        <li class="social__list-item">
-                            <a class="social__link" href=""><img class="social__icon" src="assets/images/header/social 1.png" alt=""></a>
-                        </li>
-                        <li class="social__list-item">
-                            <a class="social__link" href=""><img class="social__icon" src="assets/images/header/social 2.png" alt=""></a>
-                        </li>
-                        <li class="social__list-item">
-                            <a class="social__link"  href=""><img class="social__icon" src="assets/images/header/social 3 .png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+            
             
         </div>  
 
@@ -359,66 +372,72 @@
                     <img class="logo__img" src="assets/images/header/logo.png" alt="">
                 </a>
             </div>
+            
 
-            <div class="footer__information information">
-                <h4 class="footer__title">Information</h4>
+            <div class="footer__wrap-info">
 
-                <ul class="information__list">
-                    <li class="information__list-item">Search</li>
-                    <li class="information__list-item">Contact us</li>
-                    <li class="information__list-item">Terms & Conditions</li>
-                    <li class="information__list-item">Privacy Policy</li>
-                </ul>
-            </div>
-
-            <div class="footer__payment payment">
-
-                <h4 class="footer__title">Payment</h4>
-
-                <div class="payment__items">
-
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-1.png" alt="">
-                    </a>
+                <div class="footer__information information">
+                    <h4 class="footer__title">Information</h4>
     
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-2.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-3.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-4.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-2-1.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-2-2.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-2-3.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-3-1.png" alt="">
-                    </a>
-    
-                    <a class="payment__link" href="">
-                        <img class="payment__img" src="assets/images/footer/payment-3-2.png" alt="">
-                    </a>
-    
-                    
+                    <ul class="information__list">
+                        <li class="information__list-item">Search</li>
+                        <li class="information__list-item">Contact us</li>
+                        <li class="information__list-item">Terms & Conditions</li>
+                        <li class="information__list-item">Privacy Policy</li>
+                    </ul>
                 </div>
 
-                
-                               
+    
+                <div class="footer__payment payment">
+    
+                    <h4 class="footer__title">Payment</h4>
+    
+                    <div class="payment__items">
+    
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-1.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-2.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-3.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-4.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-2-1.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-2-2.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-2-3.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-3-1.png" alt="">
+                        </a>
+        
+                        <a class="payment__link" href="">
+                            <img class="payment__img" src="assets/images/footer/payment-3-2.png" alt="">
+                        </a>
+        
+                        
+                    </div>  
+                      
+                </div>
+
             </div>
+
+
 
             <div class="footer__subscribe" >
 
