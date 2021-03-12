@@ -1,18 +1,18 @@
 @font-face{
     font-family:"MuliRegular";
-    src: url("assets/fonts/Muli-Regular.woff") format("truetype");
+    src: url("../assets/fonts/Muli-Regular.woff") format("truetype");
     font-style: normal;
 }
 
 @font-face{
     font-family:"MuliBold";
-    src: url("assets/fonts/Muli-Bold.ttf") format("truetype");
+    src: url("../assets/fonts/Muli-Bold.ttf") format("truetype");
     font-style: normal;
 }
 
 @font-face{
     font-family:"MuliExtraBold";
-    src: url("assets/fonts/Muli-ExtraBold.woff") format("truetype");
+    src: url("../assets/fonts/Muli-ExtraBold.woff") format("truetype");
     font-style: normal;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .header{
     height: 100vh;
-    background: url("assets/images/header/header-bg-img.png")  no-repeat ;
+    background: url("../assets/images/header/header-bg-img.png")  no-repeat ;
     background-size: cover;
     background-position:center;
     width: 100%;
@@ -156,7 +156,7 @@ body {
     content: " ";
     width: 47px;
     height: 2px;
-    background: url("assets/images/header/heder-before.png") center/cover no-repeat;
+    background: url("../assets/images/header/heder-before.png") center/cover no-repeat;
     position: absolute;
     top: 50%;
     left: 203px;
@@ -206,7 +206,7 @@ body {
     content: " ";
     display: block;
     position: absolute;
-    background-image:url("assets/images/header/header-Arrow.png");
+    background-image:url("../assets/images/header/header-Arrow.png");
     width: 30px ;
     height: 16px;
     left: 210px ;
@@ -352,7 +352,7 @@ body {
 .about__title-span::before{
     content: " ";
     position: absolute;
-    background-image:url("assets/images/about/about-after.png");
+    background-image:url("../assets/images/about/about-after.png");
     width: 450px;
     height: 13px;
     top: 120px;
@@ -376,7 +376,7 @@ body {
 .about__list-item::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/about/right-li.png");
+    background-image: url("../assets/images/about/right-li.png");
     width: 18px;
     height: 18px;
     top: 3px;
@@ -398,7 +398,7 @@ body {
 .about__btn::after{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/about/arrow.png");
+    background-image: url("../assets/images/about/arrow.png");
     width: 30px;
     height: 16px;
     top: 25px;
@@ -483,7 +483,7 @@ body {
 .products__btn::after{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/produts/product-arrow.png");
+    background-image: url("../assets/images/produts/product-arrow.png");
     width: 30px;
     height: 16px;
     top: 25px;
@@ -552,7 +552,7 @@ body {
 .story__button::after{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/story/arrow.png");
+    background-image: url("../assets/images/story/arrow.png");
     width: 30px;
     height: 16px;
     top: 20px;
@@ -570,7 +570,7 @@ body {
 .story__content-right::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/story/right-mg-1.png");
+    background-image: url("../assets/images/story/right-mg-1.png");
     width: 290px;
     height: 216px;
     top: 20px;
@@ -616,7 +616,7 @@ body {
 .testimonials__contener::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/testimonials/Sarah\ A.png");
+    background-image: url("../assets/images/testimonials/Sarah\ A.png");
     width: 764px;
     height: 148px;
     top: -65px;
@@ -660,7 +660,7 @@ body {
 .testimonials__arrows::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/testimonials/arrow-left.png");
+    background-image: url("../assets/images/testimonials/arrow-left.png");
     width: 30px;
     height: 16px;
     top: 0;
@@ -670,7 +670,7 @@ body {
 .testimonials__arrows::after{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/testimonials/arow-right.png");
+    background-image: url("../assets/images/testimonials/arow-right.png");
     width: 30px;
     height: 16px;
     top: 0;
@@ -717,7 +717,7 @@ body {
 .blog__content-left::after{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/blog/before.png");
+    background-image: url("../assets/images/blog/before.png");
     width: 687px;
     height: 12px;
     top: 280px;
@@ -778,7 +778,7 @@ margin: 20px 0 0 0;
 .instagram__link-top::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/instagram/instagram.png");
+    background-image: url("../assets/images/instagram/instagram.png");
     width: 26px;
     height: 26px;
     top: 3px;
@@ -801,7 +801,7 @@ margin: 20px 0 0 0;
 .instagram__item::after{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/instagram/inst-card-after.png");
+    background-image: url("../assets/images/instagram/inst-card-after.png");
     width: 26px;
     height: 26px;
     bottom: 15px;
@@ -902,7 +902,7 @@ margin: 0 0 0 160px;
     height: 60px;
     border-radius: 30px;
     outline: none;
-    background-image: url("./assets/images/footer/input.png") ;
+    background-image: url("../assets/images/footer/input.png") ;
     background-repeat: no-repeat;
     background-position: 20px 50%;
     background-color: #fff;
@@ -930,7 +930,7 @@ margin: 0 0 0 160px;
 .footer__block-link::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/footer/input-arrows-before.png");
+    background-image: url("../assets/images/footer/input-arrows-before.png");
     width: 48px;
     height: 43px;
     top: -18px;
@@ -998,7 +998,7 @@ margin: 0 0 0 160px;
 .footer__bottom-link::before{
     content: " ";
     position: absolute;
-    background-image: url("assets/images/footer/botem.png");
+    background-image: url("../assets/images/footer/botem.png");
     width: 13px;
     height: 25px;
     top: -13px;
@@ -1741,6 +1741,4 @@ margin: 0 0 0 160px;
 }
 
 @media (max-width: 320px) {
-
-
 }
