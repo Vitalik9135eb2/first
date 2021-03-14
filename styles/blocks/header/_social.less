@@ -1,0 +1,58 @@
+// main: ./../main.less
+
+.socidal{
+    border: 2px solid red;
+}
+.social::before{
+    content: " ";
+    width: 47px;
+    height: 2px;
+    background: url("../assets/images/header/heder-before.png") center/cover no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 203px;
+}
+
+.social__list{
+    border: 2px solid red;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.social__list-item{
+    margin-right: 45px;
+    
+}
+
+.social__list-item:last-child{
+    margin-right: 0;
+}
+
+.social__link{
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 2.4;
+    
+}
+
+
+@media (max-width: 480px) {
+
+    .social__list-item{
+        margin-right: 35px;
+    }
+    .social__link{
+        width:25px;
+        height: 25px;
+    }
+    .social__icon{
+        width: 8px;
+    }
+    .social::before{
+        left: 167px;
+    }
+}

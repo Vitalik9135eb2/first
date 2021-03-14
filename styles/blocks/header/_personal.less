@@ -1,0 +1,46 @@
+// main: ./../main.less
+
+.personal__list{
+    border: 2px solid red;
+    display: flex;
+    padding: 0 ;
+    margin: 0;
+    
+}
+.personal__list-item{
+    margin-right: 45px;
+}
+.personal__list-item:last-child{
+    margin-right: 0;
+    position: relative;
+}
+
+.personal__cart-count{
+    display: inline-block;
+    background-color: #fff;
+    border-radius:50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 2;
+    color: #000;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+
+
+@media (max-width: 480px) {
+
+    .personal__list{
+        align-items:center;
+
+    }
+    .personal__list-item{
+        margin-right: 35px;
+    }
+    .personal__icon{
+        width: 18px;
+    }
+}

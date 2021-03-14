@@ -1,0 +1,98 @@
+// main: ./../main.less
+
+.smoothies{
+    height: 860px;
+    
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+.smoothies__title{
+    margin: 100px 0 55px 0 ;
+    text-align: center;
+    border: 2px solid red;
+    color: #f7ae3b;
+}
+
+.smoothies__text{
+    border: 2px solid red;
+    display: block;
+    text-align: center;
+    max-width: 915px;
+    margin: 0 auto;
+} 
+
+.smoothies__contener{
+    max-width: 1010px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 0 0 0;
+}
+
+.smoothies__item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 25%;
+    border-right: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
+}
+.smoothies__item:nth-child(8 )  {border: 0;}.smoothies__item:nth-child(7)  {border-bottom: 0;} .smoothies__item:nth-child(6)  {border-bottom: 0;}
+.smoothies__item:nth-child(5)  {border-bottom: 0;} .smoothies__item:nth-child(4)  {border-right: 0;}
+
+.smoothies__img{
+    width: 74px;
+    height: 70px;
+    margin: 35px 0 0 0;
+}
+
+.smoothies__item-name{
+    
+    margin: 23px 0px 18px 0px;
+    padding: 0;
+    color: #f2612d;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+
+}
+
+@media (max-width: 768px) {
+    
+    .smoothies__title {
+        margin: 60px 0 55px 0;
+    } 
+}  
+
+@media (max-width: 480px) {
+     
+    .smoothies{
+        height: 100%;
+    }
+    .smoothies__title {
+        margin: 25px 0 20px 0;
+        font-size: 33px;
+    }       
+
+    .smoothies__text{
+        font-size: 11px;
+    }
+
+    .smoothies__contener{
+        margin: 30px 0 0 0 
+    }
+    .smoothies__img{
+        width: 40px;
+        height: 45px;
+    }
+    .smoothies__item-name{
+        font-size: 13px;
+    }
+}
+
