@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сюда подключаем стили -->
+    <link rel="stylesheet" href="./css/libs/WOW-master/css/libs/animate.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.min.css">
     <title>Document</title>
@@ -111,7 +112,7 @@
         </div>  
 
         <div class="header__content">
-            <button class="header__btn btn btn--green">Shop Now</button>
+            <button class="header__btn btn btn--green wow bounceInLeft">Shop Now</button>
         </div>
 
     </header>
@@ -184,7 +185,7 @@
 
         <div class="about__content-left">
 
-            <img class="about__img" src="assets/images/about/img-left.png" alt="" >
+            <img class="about__img wow bounceInLeft" src="assets/images/about/img-left.png" alt="" data-wow-offset="500">
 
         </div>
 
@@ -489,6 +490,14 @@
         </div>
         
     </footer>
+
+
+
+    <script src="./css/libs/WOW-master/dist/wow.min.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
 
 
 </body>
