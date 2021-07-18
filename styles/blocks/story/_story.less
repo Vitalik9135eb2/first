@@ -1,4 +1,4 @@
-// main: ./../main.less
+// main: ./../../main.less
 
 
 .story{
@@ -6,12 +6,34 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    @media (max-width: 1600px){
+        height: 100%
+    }
+    @media (max-width: 1400px){
+        height: 100%;
+        margin: 20px 0 30px 0;
+    }
+    @media (max-width: 768px) {
+        height: 100%;
+    }
 }
 .story__contener{
-    border: 2px solid red;
     display: flex;
-    max-width: 1302px;
-    height: 605px;
+    max-width: 1300px;
+    height: 600px;
+    @media (max-width: 1600px){
+        height: 100%
+    }
+    @media (max-width: 1400px){
+        max-width: 1000px;
+    }
+    @media (max-width: 1400px){
+        max-width: 850px;
+    }
+    @media (max-width: 768px) {
+        display: block;
+        height: 100%;
+    }
     
 }
 
@@ -21,19 +43,40 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
+    @media (max-width: 1600px){
+        justify-content: flex-start;
+        margin: 50px 0;
+    }
+    @media (max-width: 768px) {
+        align-items:center;
+    }
 }
 
 .story__title{
     color: #f7ae3b;
-    
     margin: 0;
+    @media (max-width: 1600px){
+        font-size: 45px;
+    }
 }
 
 .story__text{
     margin: 45px 206px 0 0;
     display: block;
     max-width: 510px;
+    @media (max-width: 1600px){
+        font-size: 16px;
+        margin: 55px 200px 0 0;
+    }
+    @media (max-width: 1200px){
+        margin: 30px 110px 0 20px;
+        max-width: 440px;
+    }
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
 }
 
 .story__button{
@@ -44,22 +87,57 @@
     justify-content: space-between;
     align-items:center;
     position: relative;
+    @media (max-width: 1600px){
+        margin: 60px 0 0 0;
+        max-width: 201px;
+        height: 40px;
+        font-size: 16px;
+    }
+    @media (max-width: 1200px){
+        margin: 50px 0 0 30px;
+        max-width: 250px;
+        height: 50px;
+    }
+    @media (max-width: 768px) {
+        font-size: 20px;
+        width:245px;
+        height: 50px;
+        margin: 40px 0 20px 0;
+    }
 }
 .story__button::after{
     content: " ";
     position: absolute;
     background-image: url("../assets/images/story/arrow.png");
+    background-size:100%;
+    background-repeat: no-repeat;
     width: 30px;
     height: 16px;
     top: 20px;
     right: 35px;
-
+    @media (max-width: 1600px){
+        width: 25px;
+        height: 16px;
+        top: 15px;
+        right: 25px;
+    }
+    @media (max-width: 1200px){
+        top: 20px;
+        right: 35px;
+    }
 }
 
 /*---content-righr---*/
 .story__content-right{
   display: flex;
   position: relative;
+  @media (max-width: 1600px){
+    margin: 50px 0;
+  }
+  @media (max-width: 576px){
+      margin: 10px;
+  }
+  
     
 }
 
@@ -67,117 +145,51 @@
     content: " ";
     position: absolute;
     background-image: url("../assets/images/story/right-mg-1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 290px;
     height: 216px;
     top: 20px;
     left: -170px;
+    @media (max-width: 1600px){
+        width: 250px;
+        height: 180px;
+        top: 5px;
+        left: -150px;
+    }
+    @media (max-width: 1200px){
+        width: 200px;
+        top: 5px;
+        left: -105px;
+    }
+    @media (max-width: 768px) {
+        top: -40px;
+        left: -30px;
+    }
 }
 
 .story__img{
-  width: 585px;
-  height: 601px;
-}
-
-@media (max-width: 1366px){
-
-    .story{
-        height: 100%;
-        margin: 55px 0 30px 0;
+    width: 585px;
+    height: 601px;
+    @media (max-width: 1600px){
+        width: 450px;
+        height: 420px;
     }
-
-}
-
-@media (max-width: 1024px){
-    .story{
-        height: 100%;
-        &__contener{
-            height: 550px;
-        }
-        &__img{
-            width: 440px;
-            height: 440px;
-            margin: 65px 10px 0 0;
-        }
-        &__content-right{
-
-            &::before{
-                width: 230px;
-                height: 175px;
-                top: 97px;
-                left: -90px;
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
-        }
-        &__title{
-            margin: 0 0 0 10px;
-            font-size: 44px;
-        }
-        &__text{
-            margin: 40px 170px 0 20px;
-            font-size: 16px;
-            line-height: 1.70;
-        }
-        &__button{
-            margin: 50px 0 0 30px;
-            max-width: 250px;
-            height: 50px;
-            &::after{
-                top: 18px;
-                right: 20px;
-            }
-        }
-
-
+    @media (max-width: 1200px){
+        width: 370px;
+        height: 360px;
     }
-
-
-}
-
-@media (max-width: 768px) {
-    
-   
-    /****************STORY*************/
-    .story{
-        height: 100%;
-    }
-
-    .story__contener{
-        display: block;
-        height: 100%;
-    }
-
-    .story__content-left{
-        align-items:center;
-    }
-
-    .story__text{
-        margin: 0 auto;
-        padding: 50px 0 0 0;
-        text-align: center;
-
-    }
-
-    .story__button{
-        font-size: 20px;
-        width:245px;
-        height: 50px;
-        margin: 40px 0 20px 0;
-
-    }
-
-    .story__content-right::before{
-        top: -40px;
-        left: -80px;
-    }
-
-    .story__img{
+    @media (max-width: 768px) {
         width: 530px;
         height: 450px;
     }
 }
 
-@media (max-width: 480px) {
+
+
+
+
+@media (max-width: 576px) {
    
     
     /****************STORY*************/
@@ -231,52 +243,5 @@
         width: 274px;
         height: 216px;
         margin: 0 auto;
-    }
-}
-
-@media (max-width: 320px) {
-   
-    .story{
-        
-    }
-
-    .story__contener{
-        
-    }
-
-    .story__content-left{
-        
-    }
-
-
-    .story__title{
-        font-size: 30px;
-
-    }
-
-    .story__text{
-        font-size: 11px;
-        padding: 15px 0 0 0;
-        line-height: 1.80;
-        
-    }
-
-    .story__button{
-        font-size: 12px;
-        width: 144px;
-        height: 30px;        
-    }
-    .story__button::after{
-        background-size: 100%;
-        width: 20px;
-        top: 10px;
-    }
-
-    .story__content-right::before{
-        
-    }
-
-    .story__img{
-        
     }
 }

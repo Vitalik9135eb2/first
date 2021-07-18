@@ -1,4 +1,4 @@
-// main: ./../main.less
+// main: ./../../main.less
 
 
 .information__list{
@@ -7,10 +7,18 @@
     font-size: 18px;
     font-weight: 800;
     font-family: 'Muli';
+    @media (max-width: 1600px){
+        margin: 0 0 0 5px;
+    }
 }
 
 .information__list-item{
     padding: 20px 0 0 0;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+        color:#996011;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -32,11 +40,3 @@
     }
 }
 
-@media (max-width: 320px) {
-
-   
-    .information__list-item {
-        padding: 10px 0 0 0;
-        
-    }
-}

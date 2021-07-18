@@ -18,11 +18,13 @@
 
 html, 
 body {
-
+    max-width: 100%;
+    overflow: hidden;
   font-family: 'MuliRegular', sans-serif;
   font-size: 10px;
 
 }
+
 
 
 

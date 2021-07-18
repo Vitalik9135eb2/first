@@ -1,22 +1,26 @@
-// main: ./../main.less
+// main: ./../../main.less
 
 
 .instagram{
-    height: 485px;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
+
 }
 
 .instagram__link-top{
-    border: 2px solid red;
     display: block;
     font-size: 24px;
     font-weight: 800;
     color: #0aa566;
     margin: 0 0 45px 0;
     position: relative;
+    @media (max-width: 1600px){
+        margin: 0 0 25px 0;
+    }
 }
 
 .instagram__link-top::before{
@@ -30,10 +34,8 @@
 }
 
 .instagram__items{
-    border: 2px solid red;
     display: flex;
     width: 100%;
-
 }
 
 .instagram__item{
@@ -56,30 +58,9 @@
     width: 100%;
 }
 
-@media (max-width: 1600px){
-    .instagram{
-        height: 100%;
 
-    }
-}
 
-@media (max-width: 1366px){
-    .instagram__link-top{
-        margin: 0 0 30px 0;
-    }
-}
-
-@media (max-width: 1024px) {
-    .instagram{
-        height: 100%;
-        
-        &__link-top{
-            margin: 0 0 10px 0;
-        }
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   
     .instagram{
         height: 100%;

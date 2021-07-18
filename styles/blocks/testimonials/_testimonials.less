@@ -1,20 +1,28 @@
-// main: ./../main.less
+// main: ./../../main.less
 
 
 .testimonials{
-      
     background-color: #672f1b;
     display: flex;
     flex-direction: column;
     align-items:center;
-    
 }
 
 .testimonials__title{
     display: block;
-    border: 1px  solid red;
     margin: 110px 0 0 0;
     color: #f7ae3b;
+    @media (max-width: 1600px){
+        margin: 60px 0 0 0;
+    }
+    @media (max-width: 1200px){
+        margin: 50px 0 0 0;
+        font-size: 44px;
+    }
+    @media (max-width: 992px){
+        margin: 60px 0 0 0;
+        font-size: 45px;
+    }
 }
 .testimonials__title-span{
     color: #f2612d;
@@ -23,25 +31,49 @@
 
 .testimonials__contener{
     max-width: 735px;
-    border: 2px solid red;
     margin: 140px 0 0 0 ;
     display: flex;
-    position: relative;        
+    position: relative;
+    @media (max-width: 1600px){
+        margin: 100px 0 0 0;
+    }
+    @media (max-width: 1200px){
+        margin: 90px 0 0 0;
+    }
+    @media (max-width: 992px){
+        margin: 90px 0 0 0;
+    }        
 }
 
 .testimonials__contener::before{
     content: " ";
     position: absolute;
     background-image: url("../assets/images/testimonials/Sarah\ A.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 764px;
     height: 148px;
     top: -65px;
     left: -135px;
-    
+    @media (max-width: 1600px){
+        width: 480px;
+        height: 150px;
+        top: -35px;
+        left: 80px;
+    }
+    @media (max-width: 1200px){
+        left: 104px;
+        top: -30px;
+    }
+    @media (max-width: 992px){
+        width: 68%;
+        height: 140px;
+        top: -38px;
+        left: 75px;
+    }
 
 }
 .testimonials__block{
-    border: 2px solid red;
     text-align: center;
     z-index: 1;
 }
@@ -50,12 +82,28 @@
     width: 220px;
     height: 220px;
     z-index: 1;
+    @media (max-width: 1600px){
+        width: 180px;
+        height: 180px;
+    }
+    @media (max-width: 1200px){
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .testimonials__text{
     display: block;
     color: #fff;
     padding: 20px 0 0 0;
+    @media (max-width: 1600px){
+        font-size: 16px;
+    }
+    @media (max-width: 1200px){
+        font-size: 17px;
+        padding: 30px 0 0 0;
+        line-height: 1.70;
+    }
 }
 
 .testimonials__cite{
@@ -63,6 +111,13 @@
     color: #f7ae3b;
     font-size: 18px;
     padding: 30px 0 0 0;
+    @media (max-width: 1600px){
+        font-size: 14px;
+    }
+    @media (max-width: 1200px){
+        font-size: 15px;
+        padding: 20px 0 0 0;
+    }
 }
 
 
@@ -71,6 +126,15 @@
     justify-content: center;
     position: relative;
     margin: 145px 0 86px 0 ;
+    @media (max-width: 1600px){
+        margin: 115px 0 46px 0 ;
+    }
+    @media (max-width: 1200px){
+        margin: 50px 0 65px 0;
+    }
+    @media (max-width: 992px){
+        margin: 100px 0 86px 0;
+    }
 }
 
 .testimonials__arrows::before{
@@ -81,6 +145,13 @@
     height: 16px;
     top: 0;
     left: -45px;
+    @media (max-width: 1600px){
+        top: -15px;
+        left: -155px;
+    }
+    @media (max-width: 1200px){
+        left: -150px;
+    }
 }
 
 .testimonials__arrows::after{
@@ -91,77 +162,22 @@
     height: 16px;
     top: 0;
     left: 70px;
-}
-
-@media (max-width: 1024px){
-
-    .testimonials{
-
-        &__title{
-            margin: 50px 0 0 0;
-            font-size: 44px;
-        }
-        &__contener{
-            margin: 90px 0 0 0;
-            &::before{
-                left: -108px;
-            }
-        }
-        &__img{
-            width: 200px;
-            height: 200px;
-        }
-        &__text{
-            font-size: 17px;
-            padding: 30px 0 0 0;
-            line-height: 1.70;
-        }
-        &__cite{
-            font-size: 15px;
-            padding: 20px 0 0 0;
-        }
-        &__arrows{
-            margin: 50px 0 65px 0;
-            &::before{
-                left: -150px;
-            }
-            &::after{
-                left: 95px;
-            }
-        }
-
+    @media (max-width: 1600px){
+        left: 70px;
+        top: -15px;
     }
-
-}
-
-@media (max-width: 768px) {
-    
-    .testimonials__title{
-        margin: 60px 0 0 0;
-        font-size: 45px;
-    }
-
-    .testimonials__contener{
-        margin: 90px 0 0 0;
-    }
-
-    .testimonials__contener::before{
-        width: 90%;
-        height: 140px;
-        top: -61px;
-        left: -6px;
-    }
-
-    .testimonials__arrows{
-        margin: 100px 0 86px 0;
+    @media (max-width: 1200px){
+        left: 95px;
     }
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 576px) {
  
     .testimonials__title{
         margin: 22px 0 0 0;
-        font-size: 36px;
+        font-size: 31px;
     }
 
     .testimonials__contener{
@@ -175,10 +191,11 @@
     }
 
     .testimonials__contener::before{
-        top: 122px;
-        left: 33px;
-        background-size: 403px;
-        background-repeat: no-repeat;
+        // top: 122px;
+        // left: 33px;
+        // background-size: 403px;
+        // background-repeat: no-repeat;
+        display: none;
     }
     .testimonials__text{
         padding: 10px 0 0 0;
@@ -190,7 +207,7 @@
     }
 
     .testimonials__arrows{
-        margin: 30px 0 60px 0;
+        margin: 60px 0 40px 0;
     }
     .testimonials__arrows::before{
         left: -72px;
@@ -201,49 +218,5 @@
         left: 50px;
         background-repeat: no-repeat;
         background-size: 20px;
-    }
-}
-
-@media (max-width: 320px) {
- 
-    .testimonials__title{
-        margin: 11px 0 0 0;
-        font-size: 28px;
-    }
-
-    .testimonials__contener{
-        
-    }
-
-    .testimonials__img{
-        width: 115px;
-        height: 115px;        
-    }
-
-    .testimonials__contener::before{
-        top: 98px;
-        left: 14px;
-        background-size: 100%;
-        width: 280px;   
-    }
-
-    .testimonials__text{
-        font-size: 11px ;
-    }
-
-    .testimonials__cite{
-        
-    }
-
-    .testimonials__arrows{
-        margin: 20px 0 40px 0;
-        
-    }
-    .testimonials__arrows::before{
-        left: -48px;
-        
-    }
-    .testimonials__arrows::after{
-        left: 31px;
     }
 }

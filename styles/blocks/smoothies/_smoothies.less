@@ -1,35 +1,67 @@
-// main: ./../main.less
+// main: ./../../main.less
 
 .smoothies{
     height: 860px;
-    
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
-    align-items:center
+    align-items:center;
+    @media (max-width: 1600px){
+        height: 730px;
+    }
+    @media (max-width: 576px){
+        height: 480px;
+    }
 }
 .smoothies__title{
     margin: 100px 0 55px 0 ;
     text-align: center;
-    border: 2px solid red;
     color: #f7ae3b;
+    @media (max-width: 1600px){
+        margin: 50px 0 40px 0 ;
+        font-size: 45px;
+    }
+    @media (max-width: 992px) {
+        margin: 60px 0 55px 0;
+    }  
+    @media (max-width: 576px) {
+        margin: 30px 0 20px 0;
+        font-size: 35px;
+    } 
 }
 
 .smoothies__text{
-    border: 2px solid red;
     display: block;
     text-align: center;
     max-width: 915px;
     margin: 0 auto;
+    @media (max-width: 1600px){
+        font-size: 16px;
+    }
+    @media (max-width: 768px){
+        max-width: 500px;
+    }
+    @media (max-width: 576px){
+        line-height: 19px;
+        font-size: 11px;
+        max-width: 300px;
+    }
 } 
 
 .smoothies__contener{
     max-width: 1010px;
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 60px 0 0 0;
+    @media (max-width: 1600px){
+        margin: 40px 0 0 0;
+    }
+    @media (max-width: 1400px){
+        margin: 60px 0 40px 0;
+    }
+    @media (max-width: 768px){
+        margin: 30px 0 20px 0;
+    }
 }
 
 .smoothies__item{
@@ -49,6 +81,25 @@
     width: 74px;
     height: 70px;
     margin: 35px 0 0 0;
+    @media (max-width: 1600px){
+        width: 54px;
+        height: 50px;
+    }
+    @media (max-width: 1400px){
+        width: 50px;
+        height: 50px;
+        margin: 20px 0 0 0;
+    }
+    @media (max-width: 768px){
+        width: 40px;
+        height: 40px;
+        margin: 10px 0 0 0;
+    }
+    @media (max-width: 576px){
+        width: 30px;
+        height: 30px;
+        margin: 5px 0 0 0;
+    }
 }
 
 .smoothies__item-name{
@@ -60,97 +111,12 @@
     font-weight: 800;
     line-height: 1.6;
     letter-spacing: -0.5px;
-
-}
-
-@media (max-width: 1366px) {
-    
-    .smoothies{
-        height: 100%;
-     
-        &__title {
-            margin: 80px 0 55px 0;
-        } 
-        &__contener{
-            margin: 60px 0 20px 0;
-        }
-        &__img{
-            width: 70px;
-            height: 70px;
-            margin: 28px 0 0 0;
-        }
-        &__item-name{
-            margin: 20px 0 15px 0;
-            font-size: 21px;
-        }
-
+    @media (max-width: 768px){
+        margin: 15px 0 10px 0;
+        font-size: 16px;
     }
-}  
-
-@media (max-width: 768px) {
-    
-    .smoothies__title {
-        margin: 60px 0 55px 0;
-    } 
-}  
-
-@media (max-width: 480px) {
-     
-    .smoothies{
-        height: 100%;
-    }
-    .smoothies__title {
-        margin: 25px 0 20px 0;
-        font-size: 33px;
-    }       
-
-    .smoothies__text{
+    @media (max-width: 576px){
         font-size: 11px;
+        margin: 10px 0 5px 0;
     }
-
-    .smoothies__contener{
-        margin: 30px 0 0 0 
-    }
-    .smoothies__img{
-        width: 40px;
-        height: 45px;
-    }
-    .smoothies__item-name{
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 320px) {
-
-    .smoothies{
-        
-    }
-    
-    .smoothies__title {
-        margin: 10px 0 10px 0;
-        font-size: 28px;
-
-    }       
-
-    .smoothies__text{
-        font-size: 10px;
-        
-    }
-
-    .smoothies__contener{
-        margin: 20px 0 0 0;
-        
-    }
-    .smoothies__img{
-        width: 30px;
-        height: 30px;
-        margin: 20px 0 0 0;
-        
-    }
-    .smoothies__item-name{
-        font-size: 11px;
-        margin: 10px 0 8px 0;
-        
-    }
-
 }

@@ -17,9 +17,9 @@
     <header class="header">
         <div class="header__top">
 
-            <button class="header__burger-btn">
-                <img src="assets/images/menu.svg" alt="" class="header__burger-btn-icon">
-            </button>
+            <span class="header__burger-btn">
+             
+            </span>
 
             <div class="header__nav">
 
@@ -27,27 +27,27 @@
 
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" herf="#" >Shop</a>
+                            <a data-goto=".products" class="menu__link" herf="#" >Shop</a>
                         </li>
     
                         <li class="menu__item">
-                            <a class="menu__link" herf="">Home</a>
+                            <a data-goto=".header" class="menu__link" herf="">Home</a>
                         </li>
     
                         <li class="menu__item">
-                            <a class="menu__link" herf="">Story</a>
+                            <a data-goto=".story" class="menu__link" herf="">Story</a>
                         </li>
     
                         <li class="menu__item">
-                            <a class="menu__link" herf="">About</a>
+                            <a data-goto=".about" class="menu__link" herf="">About</a>
                         </li>
     
                         <li class="menu__item">
-                            <a class="menu__link" herf="">Blog</a>
+                            <a data-goto=".blog" class="menu__link" herf="">Blog</a>
                         </li>
     
                         <li class="menu__item">
-                            <a class="menu__link" herf="" >Testimonials</a>
+                            <a data-goto=".testimonials" class="menu__link" herf="" >Testimonials</a>
                         </li>
                     </ul>
     
@@ -479,9 +479,8 @@
 
             <div class="footer__btn-top-wrap">
 
-                <span class="footer__span">Go top</span>
 
-                <a class="footer__bottom-link" href="">
+                <a data-goto=".header" class="footer__bottom-link" href="#">
                     <img class="footer__bottom-img" src="assets/images/footer/arow-botem.png" alt="">
                 </a>
 
@@ -492,12 +491,13 @@
     </footer>
 
 
-
-    <script src="./css/libs/WOW-master/dist/wow.min.js"></script>
     
+    <script src="./css/libs/WOW-master/dist/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+
+    <script src="./index.js"></script>
 
 
 </body>

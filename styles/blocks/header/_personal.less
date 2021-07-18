@@ -1,7 +1,6 @@
-// main: ./../main.less
+// main: ./../../main.less
 
 .personal__list{
-    border: 2px solid red;
     display: flex;
     padding: 0 ;
     margin: 0;
@@ -28,10 +27,19 @@
     position: absolute;
     top: -15px;
     left: 15px;
+   
+}
+.personal__icon{
+    width: 20px;
+    height: 22px;
+    @media (max-width: 1400px){
+        width: 18px;
+        height: 18px;
+    }
 }
 
 
-@media (max-width: 1366px) {
+@media (max-width: 1400px) {
 
     .personal__list{
         align-items:center;
@@ -40,8 +48,11 @@
     .personal__list-item{
         margin-right: 40px;
     }
-    .personal__icon{
-        width: 22px;
+    
+}
+@media (max-width: 768px){
+    .personal__list-item{
+        margin-right: 30px;
     }
 }
 
